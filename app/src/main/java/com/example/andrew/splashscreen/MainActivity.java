@@ -1,5 +1,6 @@
 package com.example.andrew.splashscreen;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -14,8 +15,11 @@ public class MainActivity extends AppCompatActivity {
             public void run()  {
                 super.run();
                 try{
-                 sleep(4000);
-                } catch (InterruptedException e){
+                 sleep(3000);
+                    Intent white = new Intent(MainActivity.this,LoginActivity.class);
+                    startActivity(white);
+                    finish();
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
