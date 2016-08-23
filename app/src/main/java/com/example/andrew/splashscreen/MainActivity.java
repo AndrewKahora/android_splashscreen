@@ -10,5 +10,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Thread bg = new Thread(){
+            public void run()  {
+                super.run();
+                try{
+                 sleep(4000);
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+
+            }
+
+        };
+
     }
 }
